@@ -71,7 +71,7 @@ var physMarks = document.querySelector("#physmarks");
 var h1 = document.querySelector("#h1");
 var h2 = document.querySelector("#h2");
 var h3 = document.querySelector("#h3");
-
+var totalMarks = 500;
 var studentsObtainedMarks = Number(engMarks.value) +
                             Number(urduMarks.value) + 
                             Number(computerMarks.value) + 
@@ -80,7 +80,16 @@ var studentsObtainedMarks = Number(engMarks.value) +
 
 
 
+var Percentage = (studentsObtainedMarks / totalMarks) * 100;
 
-
-    h1.innerHTML = "Student Obtained Marks is " + studentsObtainedMarks;
+    h1.innerHTML = "Student Obtained Marks is " + studentsObtainedMarks + "/500";
+    h2.innerHTML = "Percentage " + Percentage + "%";
+    if(Percentage >= 90) h3.innerHTML = "Grade A";
+    else if(Percentage >= 80) h3.innerHTML = "Grade A";
+    else if(Percentage >= 70) h3.innerHTML = "Grade B";
+    else if(Percentage >= 60) h3.innerHTML = "Grade C";
+    else if(Percentage >= 50) h3.innerHTML = "Grade D";
+    else  h3.innerHTML = "Fail";
+    
+   
 }

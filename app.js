@@ -58,22 +58,29 @@
 // Grade
 
 
+
+function result(){
+    
 var username = document.querySelector("#username");
 var rollNumber = document.querySelector("#rollno");
-var engMarks = document.querySelector("#engmarks")
-var urduMarks = document.querySelector("#urdumarks")
-var computerMarks = document.querySelector("#compmarks")
-var chemMarks = document.querySelector("#chemmarks")
-var physMarks = document.querySelector("#physmarks")
+var engMarks = document.querySelector("#engmarks");
+var urduMarks = document.querySelector("#urdumarks");
+var computerMarks = document.querySelector("#compmarks");
+var chemMarks = document.querySelector("#chemmarks");
+var physMarks = document.querySelector("#physmarks");
 var h1 = document.querySelector("#h1");
 var h2 = document.querySelector("#h2");
 var h3 = document.querySelector("#h3");
 
-var studentsObtainedMarks = engMarks.value + urduMarks.value + computerMarks.value + chemMarks.value + physMarks.value;
+var studentsObtainedMarks = Number(engMarks.value) +
+                            Number(urduMarks.value) + 
+                            Number(computerMarks.value) + 
+                            Number(chemMarks.value) + 
+                            Number(physMarks.value); 
 
-var totalMarks = 500;
 
 
-function result(){
+
+
     h1.innerHTML = "Student Obtained Marks is " + studentsObtainedMarks;
 }

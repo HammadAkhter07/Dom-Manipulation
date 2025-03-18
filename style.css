@@ -25,7 +25,7 @@ input[type="number"]::-webkit-inner-spin-button {
 }
 #h1 , #h2 , #h3 , #name , #roll-no {
     margin: 10px;
-    font-size: 1rem;
+   
     
 }
 .btn-parent {
@@ -56,5 +56,9 @@ input[type="number"]::-webkit-inner-spin-button {
     }
     .container {
         margin: 10px !important;
+    }
+    #h1 , #h2 , #h3 , #name , #roll-no {
+        margin: 5px !important;
+        font-size: 1.2rem;
     }
 }

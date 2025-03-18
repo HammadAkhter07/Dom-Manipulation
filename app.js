@@ -89,11 +89,11 @@ var Percentage = parseFloat((studentsObtainedMarks / totalMarks) * 100).toFixed(
 
     h1.innerHTML = "Student Obtained Marks is " + studentsObtainedMarks + " / 500";
     h2.innerHTML = "Percentage " + Percentage + "%";
-    if(Percentage >= 90) h3.innerHTML = "Grade A";
-    else if(Percentage >= 80) h3.innerHTML = "Grade A";
-    else if(Percentage >= 70) h3.innerHTML = "Grade B";
-    else if(Percentage >= 60) h3.innerHTML = "Grade C";
-    else if(Percentage >= 50) h3.innerHTML = "Grade D";
+    if(Percentage >= 90) h3.innerHTML = "Grade A+";
+    else if(Percentage >= 75) h3.innerHTML = "Grade A";
+    else if(Percentage >= 65) h3.innerHTML = "Grade B";
+    else if(Percentage >= 55) h3.innerHTML = "Grade C";
+    else if(Percentage >= 45) h3.innerHTML = "Grade D";
     else  h3.innerHTML = "Grade Fail";
 
     

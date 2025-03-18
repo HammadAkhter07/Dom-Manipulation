@@ -62,7 +62,7 @@
 function result(){
     
 var username = document.querySelector("#username");
-var rollNumber = document.querySelector("#rollno");
+var rollNumber = document.querySelector("#rollNo");
 var engMarks = document.querySelector("#engmarks");
 var urduMarks = document.querySelector("#urdumarks");
 var computerMarks = document.querySelector("#compmarks");
@@ -71,6 +71,9 @@ var physMarks = document.querySelector("#physmarks");
 var h1 = document.querySelector("#h1");
 var h2 = document.querySelector("#h2");
 var h3 = document.querySelector("#h3");
+var name = document.querySelector("#name")
+var  rollno = document.querySelector("#roll-no")
+
 var totalMarks = 500;
 var studentsObtainedMarks = Number(engMarks.value) +
                             Number(urduMarks.value) + 
@@ -79,17 +82,22 @@ var studentsObtainedMarks = Number(engMarks.value) +
                             Number(physMarks.value); 
 
 
+var Percentage = parseFloat((studentsObtainedMarks / totalMarks) * 100).toFixed(2);
 
-var Percentage = (studentsObtainedMarks / totalMarks) * 100;
 
-    h1.innerHTML = "Student Obtained Marks is " + studentsObtainedMarks + "/500";
+
+
+    h1.innerHTML = "Student Obtained Marks is " + studentsObtainedMarks + " / 500";
     h2.innerHTML = "Percentage " + Percentage + "%";
     if(Percentage >= 90) h3.innerHTML = "Grade A";
     else if(Percentage >= 80) h3.innerHTML = "Grade A";
     else if(Percentage >= 70) h3.innerHTML = "Grade B";
     else if(Percentage >= 60) h3.innerHTML = "Grade C";
     else if(Percentage >= 50) h3.innerHTML = "Grade D";
-    else  h3.innerHTML = "Fail";
+    else  h3.innerHTML = "Grade Fail";
+
     
+    name.innerHTML = "Student Name : " + username.value;
+    rollno.innerHTML = "Roll Number : " + rollNumber.value;
    
 }

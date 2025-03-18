@@ -1,0 +1,59 @@
+input[type="number"]::-webkit-outer-spin-button,
+input[type="number"]::-webkit-inner-spin-button {
+    -webkit-appearance: none;
+    margin: 0;
+}
+
+* {
+    font-family: portsilk;
+}
+
+.container {
+    margin: 40px;
+    padding: 20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+}
+
+.input {
+    width: 50%;
+    height: 35px;
+    margin-right: 20px;
+    margin-top: 10px;
+}
+#h1 , #h2 , #h3 , #name , #roll-no {
+    margin: 10px;
+    
+}
+.btn-parent {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+}
+.btn {
+    padding: 15px 30px;
+    border: 2px solid black;
+    border-radius: 20px;
+    font-size: 1rem;
+  
+}
+.head {
+    text-align: center;
+    margin-top: 50px;
+}
+@font-face {
+    font-family: portsilk;
+    src: url(./assets/Portsilk.ttf);
+}
+@media(max-width:600px){
+    .input {
+        width: 100%;
+        
+    }
+    .container {
+        margin: 10px !important;
+    }
+}
